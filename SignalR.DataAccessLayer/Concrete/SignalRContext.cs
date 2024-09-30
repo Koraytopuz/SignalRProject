@@ -12,7 +12,7 @@ namespace SignalR.DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=KRYTOPUZ\\SQL1 initial Catalog=SignalRDb;integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=Krytopuz\\SQL1;initial Catalog=SignalRDb;integrated Security=true;TrustServerCertificate=True");
         }
         public DbSet<About> Abouts{ get; set; }
         public DbSet<Booking> Bookings{ get; set; }
